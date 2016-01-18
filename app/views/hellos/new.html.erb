@@ -1,0 +1,11 @@
+<h1> Say Hello! </h1>
+<%= simple_form_for @hello do |f| %>
+	<%= f.input :greeting %>
+	<br />
+	<%= f.input :language %>
+	<br />
+	<br />
+	<%= f.submit 'Create', class: 'btn btn-danger' %>
+<% end %> 
+
+<%= link_to 'See More', root_path %>
